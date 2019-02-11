@@ -1,9 +1,12 @@
 # Features
 [x] Minfy CSS
 [x] Minfy Js
-[] Minfy Images
-[] Copy files
+[x] Minfy Images
+[x] Copy files
 [] Zalo chat integrate
 [] Faster
 [] Edit content
 [] Fix fotter
+[] Google analytics
+[] Contact post and email
+

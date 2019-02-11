@@ -52,7 +52,7 @@ var paths = {
   },
   fonts: {
     src: 'src/fonts/*',
-    dest: 'assets/fonts'
+    dest: 'assets/'
   }
 };
 
@@ -63,7 +63,11 @@ var paths = {
 function clean() {
   // You can use multiple globbing patterns as you would with `gulp.src`,
   // for example if you are using del 2.0 or above, return its promise
-  return del([ 'min' ]);
+  return del([ 
+    'assets/fonts',
+    'assets/scripts',
+    'assets/styles'
+   ]);
 }
 
 /*

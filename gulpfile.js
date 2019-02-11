@@ -24,6 +24,7 @@ var paths = {
         'src/js/slider/jquery.themepunch.tools.min.js',
         'src/js/slider/jquery.themepunch.revolution.min.js',
         'src/js/slider/custom-revolution.js',
+        'src/js/loadproject.js',
         'src/js/jquery.cubeportfolio.min.js',
         'src/js/portfolio-custom.js',
         'src/js/slick.min.js',
@@ -122,7 +123,7 @@ function copy() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));
+var build = gulp.series(clean, gulp.parallel(styles, scripts, copy));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks

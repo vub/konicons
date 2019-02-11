@@ -8,34 +8,50 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
+var imagemin = require('gulp-imagemin');
+var gulpCopy = require('gulp-copy');
 
 var paths = {
   styles: {
-    src: 'assets/css/**/*.css',
-    dest: 'min/styles/'
+    src: 'src/css/**/*.css',
+    dest: 'assets/styles/'
   },
   scripts: {
     src: [
-        'assets/js/jquery-1.11.2.min.js',
-        'assets/js/bootstrap.min.js',
-        'assets/js/jquery.sticky.js',
-        'assets/js/slider/jquery.themepunch.tools.min.js',
-        'assets/js/slider/jquery.themepunch.revolution.min.js',
-        'assets/js/slider/custom-revolution.js',
-        'assets/js/jquery.cubeportfolio.min.js',
-        'assets/js/portfolio-custom.js',
-        'assets/js/slick.min.js',
-        'assets/js/modernizr.custom.js',
-        'assets/js/jquery.magnific-popup.min.js',
-        'assets/js/jquery.touchSwipe.min.js',
-        'assets/js/jquery.liquid-slider.js',
-        'assets/js/ionrangeslider.js',
-        'assets/js/classie.js',
-        'assets/js/wow.min.js',
-        'assets/js/main.js',
-        'assets/js/theme_panel.js',
+        'src/js/jquery-1.11.2.min.js',
+        'src/js/bootstrap.min.js',
+        'src/js/jquery.sticky.js',
+        'src/js/slider/jquery.themepunch.tools.min.js',
+        'src/js/slider/jquery.themepunch.revolution.min.js',
+        'src/js/slider/custom-revolution.js',
+        'src/js/jquery.cubeportfolio.min.js',
+        'src/js/portfolio-custom.js',
+        'src/js/slick.min.js',
+        'src/js/modernizr.custom.js',
+        'src/js/jquery.magnific-popup.min.js',
+        'src/js/jquery.touchSwipe.min.js',
+        'src/js/jquery.liquid-slider.js',
+        'src/js/ionrangeslider.js',
+        'src/js/classie.js',
+        'src/js/wow.min.js',
+        'src/js/main.js',
+        'src/js/theme_panel.js',
     ],
-    dest: 'min/scripts/'
+    dest: 'assets/scripts/'
+  },
+  images: {
+    src: [
+      // 'src/images/**/*.png',
+      // 'src/images/**/*.jpg',
+      // 'src/images/**/*.gif',
+      // 'src/images/**/*.jpeg',
+      'src/images/**/*',
+    ],
+    dest: 'assets/images'
+  },
+  fonts: {
+    src: 'src/fonts/*',
+    dest: 'assets/fonts'
   }
 };
 
@@ -80,10 +96,33 @@ function watch() {
   gulp.watch(paths.styles.src, styles);
 }
 
+function images() {
+  return gulp.src(paths.images.src)
+    .pipe(imagemin(
+      [
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({
+            plugins: [
+                {removeViewBox: true},
+                {cleanupIDs: false}
+            ]
+        })
+    ]))
+    .pipe(gulp.dest(paths.images.dest));
+}
+
+function copy() {
+  return gulp
+    .src(paths.fonts.src)
+    .pipe(gulpCopy(paths.fonts.dest, { prefix: 1 }));
+}
+
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts));
+var build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks

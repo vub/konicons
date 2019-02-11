@@ -653,8 +653,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 
 <!-- main js -->
-<!-- <script src="assets/scripts/main.min.js"></script> -->
-
+<script src="assets/scripts/main.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 <script>
     $(document).ready(function() {
         var requireTemplate = `<div class="alert alert-warning alert-dismissible fade in" role="alert">
@@ -692,22 +692,67 @@
 
             if (validate == true) {
                 $('#contact_message').html('');
-
-                $.post("/contact", $("#contact_form").serialize(),  function(response) {
-                    $('#contact_message').html(response);
-                    $( "#contact_message" ).show(5000);
-                }).fail(function() {
-//                    alert( "error" );
-                    $('#contact_message').html(sendFaileTemplate);
+                writeContactData($("#senderName").val(), $("#senderEmail").val(), $("#senderPhone").val(), $("#senderMessage").val(), function(error) {
+                    if (error) {
+                        console.log(error);
+                        $('#contact_message').html(sendFaileTemplate);
+                    } else {
+                        console.log('success');
+                        $('#contact_message').html('Gửi tin nhắn thành công.');
+                        $( "#contact_message" ).show(5000);
+                    }
                 });
+
+//                 $.post("/contact", $("#contact_form").serialize(),  function(response) {
+//                     $('#contact_message').html(response);
+//                     $( "#contact_message" ).show(5000);
+//                 }).fail(function() {
+// //                    alert( "error" );
+//                     $('#contact_message').html(sendFaileTemplate);
+//                 });
             }
             return false;
-
         });
     });
-</script>
 
-<script src="assets/scripts/main.min.js"></script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAaU-zZ0GOyk1gjgTyf0nR5fMFjuRpULAk",
+    authDomain: "konicons-729a6.firebaseapp.com",
+    databaseURL: "https://konicons-729a6.firebaseio.com",
+    projectId: "konicons-729a6",
+    storageBucket: "konicons-729a6.appspot.com",
+    messagingSenderId: "317586765808"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+  function writeContactData(name, email, phone, message, callback) {
+    var dt = new Date();
+    var dateNow = dt.getFullYear() 
+        + "-" + (dt.getMonth() + 1) 
+        + "-" + dt.getDate() 
+        + "-" + dt.getHours()
+        + "-" + dt.getMinutes()
+        + "-" + dt.getMilliseconds();
+        
+    firebase.database().ref('contact/' + 'visitor' + dateNow).set({
+        name: name,
+        email: email,
+        phone: phone,
+        message : message
+    }, function(error) {
+        callback(error);
+        if (error) {
+            console.log(error);
+        // The write failed...
+        } else {
+        // Data saved successfully!
+        console.log('success');
+        }
+    });
+  }
+</script>
 <!-- <div>Konicons.com.vn</div> -->
 </body>
 </html>

@@ -41,20 +41,20 @@ Author URI: http://www.mkscoder.com
 .theme-panel-title h4{
 	font-family:'Open Sans', sans-serif;
 	font-weight:700;
-	color:#1f1f1f;!important;
+	color:#1f1f1f !important;
 	}
 .amount-1{
 	font-family:'Open Sans', sans-serif;
 	font-weight:700;
 	margin-bottom:10px;
-	color:#1f1f1f;!important;
+	color:#1f1f1f !important;
 	}
 .about-colors{
 	font-size:11px;
 	color:#cccccc;
 	font-family:'Open Sans', sans-serif;
 	font-weight:400;
-	color:#1f1f1f;!important;
+	color:#1f1f1f !important;
 	}
 .colors-container {
 	width: 100%;
@@ -139,7 +139,7 @@ Author URI: http://www.mkscoder.com
 	background: #ce292d;
 }
 .blue {
-	background: #00add5;+
+	background: #00add5;
 }
 
 .blue-2 {
@@ -161,7 +161,6 @@ Author URI: http://www.mkscoder.com
 .orange {
 	background: #E47911;
 }
-
 
 .beige {
 	background: #c0a884;

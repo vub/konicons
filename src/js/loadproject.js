@@ -1,6 +1,60 @@
 // $(document).ready(function ($) {
 var projects = [
     {
+        id: 181,
+        name: 'Nhà Máy Ấp Trứng 3',
+        investor: 'Công ty Cổ phần Chăn nuôi CP Việt Nam',
+        scale: 'Tổng diện tích sàn 3000 m2',
+        job: 'Thiết kế kiến trúc, Kết cấu và Cơ điện',
+        year: '2018',
+        images: [
+            'nha_may_ap_trung_1.jpg',
+            'nha_may_ap_trung_2.jpg',
+            'nha_may_ap_trung_3.jpg',
+        ],
+        thumbnail: 'nha_may_ap_trung_1.jpg'
+    },
+    {
+        id: 182,
+        name: 'Nhà Nghỉ Chuyên Gia KSP',
+        investor: ' Công ty TNHH KSP Việt Nam',
+        scale: '01 trệt, 01 lầu, tổng diện tích sàn 600 m2',
+        job: 'Thiết kế kiến trúc, Kết cấu, Cơ điện và Nội thất',
+        year: '2018',
+        images: [
+            'chuyen_gia_ksp_1.jpg',
+            'chuyen_gia_ksp_2.jpg',
+            'chuyen_gia_ksp_3.jpg',
+            'chuyen_gia_ksp_4.jpg',
+        ],
+        thumbnail: 'chuyen_gia_ksp_1.jpg'
+    },
+    {
+        id: 183,
+        name: 'Bệnh Viện Đa Khoa Quốc Tế Hoàn Mỹ Thủ Đức',
+        investor: 'Công ty Cổ phần Bệnh Viện Đa Khoa Quốc Tế Hoàn Mỹ Thủ Đức',
+        scale: '02 hầm, 10 tầng cao, tổng diện tích sàn 23295 m2',
+        job: 'Thiết kế Kết cấu',
+        year: '2018',
+        images: [
+            'benh_vien_thu_duc_1.jpg',
+            'benh_vien_thu_duc_2.jpg',
+        ],
+        thumbnail: 'benh_vien_thu_duc_1.jpg'
+    },
+    {
+        id: 184,
+        name: 'Khu Đô Thị Him Lam Phường Đại Phúc, thành phố Bắc Ninh, tỉnh Bắc Ninh',
+        investor: 'Công ty Cổ phần Him Lam',
+        scale: '',
+        job: 'Thiết kế Đấu thầu Kết cấu Khối A, B và C',
+        year: '2018',
+        images: [
+            'him_lam_bac_ninh.jpg'
+        ],
+        thumbnail: 'him_lam_bac_ninh.jpg'
+    },
+    {
         id: 12,
         name: 'Chung cư 215 Hoàng Văn Thụ',
         investor: 'Công ty Cổ phần Đầu tư Xây dựng Tân Bình',

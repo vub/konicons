@@ -6,8 +6,9 @@
 [x] Form submit
 [] Zalo chat integrate
 [] Faster
-[] Edit content
+[x] Edit content
 [] Fix fotter
-[] Google analytics
+[x] Google analytics
 [] Contact post and notification via email
 [x] Add projects
+[x] Improve services select

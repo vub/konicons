@@ -4,7 +4,7 @@ var projects = [
         id: 181,
         name: 'Nhà Máy Ấp Trứng 3',
         investor: 'Công ty Cổ phần Chăn nuôi CP Việt Nam',
-        scale: 'Tổng diện tích sàn 3000 m2',
+        scale: 'Tổng diện tích sàn 3000 m<sup>2</sup>',
         job: 'Thiết kế kiến trúc, Kết cấu và Cơ điện',
         year: '2018',
         images: [
@@ -18,7 +18,7 @@ var projects = [
         id: 182,
         name: 'Nhà Nghỉ Chuyên Gia KSP',
         investor: ' Công ty TNHH KSP Việt Nam',
-        scale: '01 trệt, 01 lầu, tổng diện tích sàn 600 m2',
+        scale: '01 trệt, 01 lầu, tổng diện tích sàn 600 m<sup>2</sup>',
         job: 'Thiết kế kiến trúc, Kết cấu, Cơ điện và Nội thất',
         year: '2018',
         images: [
@@ -33,7 +33,7 @@ var projects = [
         id: 183,
         name: 'Bệnh Viện Đa Khoa Quốc Tế Hoàn Mỹ Thủ Đức',
         investor: 'Công ty Cổ phần Bệnh Viện Đa Khoa Quốc Tế Hoàn Mỹ Thủ Đức',
-        scale: '02 hầm, 10 tầng cao, tổng diện tích sàn 23295 m2',
+        scale: '02 hầm, 10 tầng cao, tổng diện tích sàn 23295 m<sup>2</sup>',
         job: 'Thiết kế Kết cấu',
         year: '2018',
         images: [
@@ -46,7 +46,7 @@ var projects = [
         id: 184,
         name: 'Khu Đô Thị Him Lam Phường Đại Phúc, thành phố Bắc Ninh, tỉnh Bắc Ninh',
         investor: 'Công ty Cổ phần Him Lam',
-        scale: '',
+        scale: 'Khu đô thị Phức hợp',
         job: 'Thiết kế Đấu thầu Kết cấu Khối A, B và C',
         year: '2018',
         images: [

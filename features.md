@@ -10,3 +10,4 @@
 [] Fix fotter
 [] Google analytics
 [] Contact post and notification via email
+[x] Add projects

@@ -13,7 +13,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.cbp-l-grid-agency-title, .cbp-l-grid-agency-desc, .cbp-l-grid-work-title, .cbp-l-grid-work-desc, .cbp-l-grid-blog-title, .cbp-l-grid-projects-title, .cbp-l-grid-projects-desc, .cbp-l-grid-masonry-projects-title, .cbp-l-grid-masonry-projects-desc {
+.cbp-l-grid-agency-title, .cbp-l-grid-agency-desc, .cbp-l-grid-work-title, .cbp-l-grid-blog-title, .cbp-l-grid-projects-title, .cbp-l-grid-projects-desc, .cbp-l-grid-masonry-projects-title, .cbp-l-grid-masonry-projects-desc {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }

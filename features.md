@@ -17,3 +17,10 @@
 [] SEO improve
 [] Copyright & software company footer
 [] Add more direction for page, to easy discover
+
+[] Better footer
+[] Better navigation
+[] Better about us page
+[] Careers
+[] News
+[] Multi Language

@@ -8,7 +8,7 @@
 [x] Google analytics
 [x] Add projects
 [x] Improve services select
-[] Zalo chat integrate
+<!-- [] Zalo chat integrate -->
 [] Faster
 [] Contact post and notification via email
 [] Fix fotter

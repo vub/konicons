@@ -1,6 +1,100 @@
 // $(document).ready(function ($) {
 var projects = [
     {
+        id: 202004,
+        name: 'Phòng Trưng Bày Kinh Doanh Trung Tâm Bảo Hành Bảo Dưỡng Ô Tô',
+        investor: 'Công ty TNHH TOYOTA LONG THÀNH',
+        scale: '01 trệt, 02 tầng cao, tổng diện tích sàn 6400 m<sup>2</sup>',
+        job: 'Thiết kế Kiến trúc, Kết cấu và Cơ điện',
+        year: '2020',
+        images: [
+            '202004_Showroom_Long_Thanh/1.jpg',
+            '202004_Showroom_Long_Thanh/2.jpg',
+            '202004_Showroom_Long_Thanh/3.jpg',
+            '202004_Showroom_Long_Thanh/4.jpg',
+            '202004_Showroom_Long_Thanh/5.jpg',
+            '202004_Showroom_Long_Thanh/6.jpg',
+            '202004_Showroom_Long_Thanh/7.jpg',
+            '202004_Showroom_Long_Thanh/8.jpg',
+            '202004_Showroom_Long_Thanh/9.jpg',
+            '202004_Showroom_Long_Thanh/10.jpg',
+            '202004_Showroom_Long_Thanh/11.jpg',
+        ],
+        thumbnail: '202004_Showroom_Long_Thanh/1.jpg'
+    },
+    {
+        id: 202003,
+        name: 'Khu Nhà Ở Cao Cấp Vườn Xuân',
+        investor: 'Công ty Cổ phần Đầu tư Bất động sản Đông Dương',
+        scale: 'tổng diện tích sàn 74283 m<sup>2</sup> (Giai đoạn 1)',
+        job: 'Thiết kế Kiến trúc, Kết cấu và Cơ điện',
+        year: '2020',
+        images: [
+            '202003_LAVIDA/1.jpg',
+            '202003_LAVIDA/2.jpg',
+            '202003_LAVIDA/3.jpg',
+            '202003_LAVIDA/4.jpg',
+            '202003_LAVIDA/5.jpg',
+            '202003_LAVIDA/6.jpg',
+            '202003_LAVIDA/7.jpg',
+        ],
+        thumbnail: '202003_LAVIDA/1.jpg'
+    },
+    {
+        id: 202002,
+        name: 'Bệnh Viện Đa Khoa Phúc Lộc Thọ',
+        investor: 'Công ty TNHH Y Khoa Phúc Lộc Thọ',
+        scale: '01 trệt, 03 tầng cao, tổng diện tích sàn 13606 m<sup>2</sup>',
+        job: 'Thiết kế kết cấu',
+        year: '2020',
+        images: [
+            '202002_Benh_vien_Phuc_Loc_Tho/1.jpg',
+            '202002_Benh_vien_Phuc_Loc_Tho/2.jpg',
+            '202002_Benh_vien_Phuc_Loc_Tho/3.jpg',
+        ],
+        thumbnail: '202002_Benh_vien_Phuc_Loc_Tho/1.jpg'
+    },
+    {
+        id: 202001,
+        name: 'Bệnh Viện Da Khoa Quốc Tế Hoan Mỹ Thủ Dức',
+        investor: 'Nguyễn Trọng Hùng',
+        scale: '01 hầm, 08 tầng cao, tổng diện tích sàn 2621.5 m<sup>2</sup>',
+        job: 'Thiết kế Kết cấu',
+        year: '2020',
+        images: [
+            '202001_van_phong_dinh_tien_hoang/1.jpg'
+        ],
+        thumbnail: '202001_van_phong_dinh_tien_hoang/1.jpg'
+    },
+    {
+        id: 201902,
+        name: 'Trung Tâm Y Tế Kỹ Thuật Cao Duy Khang Medic Saigon',
+        investor: 'Công ty TNHH MTV Giáo dục Y tế An Thịnh',
+        scale: '01 trệt, 03 lầu, tổng diện tích sàn 3379 m<sup>2</sup>',
+        job: 'Thiết kế Kết cấu',
+        year: '2019',
+        images: [
+            '201902_phong_kham_duy_khang/1.jpg',
+            '201902_phong_kham_duy_khang/2.jpg',
+            '201902_phong_kham_duy_khang/3.jpg'
+        ],
+        thumbnail: '201902_phong_kham_duy_khang/1.jpg'
+    },
+    {
+        id: 201901,
+        name: 'Bệnh Viện Chuyên Khoa Mắt Tai Mũi Họng Răng Hàm Mặt Gia Định',
+        investor: 'Công ty Cổ phần Bệnh viện Chuyên Khoa Mắt – Tai Mũi Họng – Răng  Hàm Mặt Gia Định',
+        scale: '02 hầm, 17 tầng cao, tổng diện tích sàn 10199 m<sup>2</sup>',
+        job: 'Thiết kế Kết cấu',
+        year: '2019',
+        images: [
+            '201901_benh_vien_gia_dinh/1.jpg',
+            '201901_benh_vien_gia_dinh/2.jpg',
+            '201901_benh_vien_gia_dinh/3.jpg',
+        ],
+        thumbnail: '201901_benh_vien_gia_dinh/1.jpg'
+    },
+    {
         id: 181,
         name: 'Nhà Máy Ấp Trứng 3',
         investor: 'Công ty Cổ phần Chăn nuôi CP Việt Nam',

@@ -45,7 +45,7 @@ var projects = [
         name: 'Bệnh Viện Đa Khoa Phúc Lộc Thọ',
         investor: 'Công ty TNHH Y Khoa Phúc Lộc Thọ',
         scale: '01 trệt, 03 tầng cao, tổng diện tích sàn 13606 m<sup>2</sup>',
-        job: 'Thiết kế kết cấu',
+        job: 'Thiết kế Kết cấu',
         year: '2020',
         images: [
             '202002_Benh_vien_Phuc_Loc_Tho/1.jpg',
@@ -56,7 +56,7 @@ var projects = [
     },
     {
         id: 202001,
-        name: 'Bệnh Viện Da Khoa Quốc Tế Hoan Mỹ Thủ Dức',
+        name: 'Bệnh Viện Đa Khoa Quốc Tế Hoàn Mỹ Thủ Đức',
         investor: 'Nguyễn Trọng Hùng',
         scale: '01 hầm, 08 tầng cao, tổng diện tích sàn 2621.5 m<sup>2</sup>',
         job: 'Thiết kế Kết cấu',

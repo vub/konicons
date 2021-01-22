@@ -1126,7 +1126,7 @@
 
 	#corporate-footer-top{
 		background-color: #348dd9;
-		background: url(../../assets/images/bg-footer.png) no-repeat right bottom #348dd9;
+		background: url(../../assets/images/bg-footer.png) no-repeat right top #348dd9;
 		/*background-color:#00add5;*/
 		/*background-color:#007A97;*/
 	}
@@ -6732,4 +6732,10 @@
 
 .fadeIn-bottom{
   top: 80%;
+}
+
+/* # News */
+.new-center {
+    display: flex;
+    justify-content: center;
 }
